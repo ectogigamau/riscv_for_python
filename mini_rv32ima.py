@@ -277,7 +277,9 @@ def main(argv):
                             f.seek(0, os.SEEK_END)
                             dtblen = f.tell()
                             f.seek(0, os.SEEK_SET)
-                            dtb_ptr = ram_amt - dtblen - sys.getsizeof(MiniRV32IMAState)
+                            #sys.getsizeof(MiniRV32IMAState)
+                            state_size = 192
+                            dtb_ptr = ram_amt - dtblen - state_size
                             if f.readinto(ram_image[dtb_ptr:]) != dtblen:
                                 print(f"Error: Could not open dtb \"{dtb_file_name}\"")
                                 return -9
