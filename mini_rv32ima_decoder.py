@@ -74,19 +74,6 @@ class MiniRV32IMAState():
     mcause = 0
     extraflags = 0
     
-
-a = 0
-def LOG_TO_FILE(string):
-    """Добавляет строку в конец указанного файла."""
-    global a
-    if a == 0:  
-        with open("pdebug.log", 'w') as file:
-            pass
-        a += 1
-
-    with open("pdebug.log", 'a') as file:
-        file.write(string + '\n')
-
 # Function
 def MiniRV32IMAStep(state, image, vProcAddress, elapsedUs, count):
     new_timer = state.timerl + elapsedUs
