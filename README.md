@@ -1,4 +1,4 @@
-# mini-rv32ima port
+# mini-rv32ima for python
 Implements a virtual machine with a processor based on the RISC-V architecture.
 Allows you to run Linux OS in Python.
 
