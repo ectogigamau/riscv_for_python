@@ -9,6 +9,7 @@ Original source code: https://github.com/cnlohr/mini-rv32ima/tree/master
 ![terminal](media/terminal.png)
 
 # Run linux
+- Clone this repository
 - Download https://github.com/cnlohr/mini-rv32ima-images/raw/master/images/linux-6.1.14-rv32nommu-cnl-1.zip
 - Extract "Image" to directory with mini_rv32ima.py
 - Run on terminal:
