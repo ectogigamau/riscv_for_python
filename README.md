@@ -2,7 +2,7 @@
 Implements a virtual machine with a processor based on the RISC-V architecture.
 This solution allows you to run Linux OS in Python.
 
-This is source code port of the mini-rv32ima to python.
+This is the source code port of the mini-rv32ima to python.
 
 Original source code: https://github.com/cnlohr/mini-rv32ima/tree/master
 
